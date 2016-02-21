@@ -4,6 +4,7 @@ import React from "react";
 import { Link } from 'react-router';
 import 'react-select/dist/react-select.css';
 import Select from 'react-select';
+import './styles.scss';
 
 
 var options = [
@@ -18,7 +19,7 @@ function logChange( val ) {
 class App extends React.Component {
 
     render() {
-        return <div>
+        return <div className="test">
             <h1>App</h1>
             <Link to="/about">About</Link>
             <Select
